@@ -4,7 +4,7 @@ using namespace std;
 class mahasiswa
 {
 public:
-	stsatic int nim;
+	static int nim;
 	int id;
 	string nama;
 
@@ -18,3 +18,15 @@ public:
 };
 
 int mahasiswa::nim = 10;
+
+void mahasiswa::setID()
+{
+	id = ++nim;
+}
+
+void mahasiswa::printAll()
+{
+	cout << "ID =" << id << endl;
+	cout << "Nama =" << id << endl;
+	cout << endl;
+}
